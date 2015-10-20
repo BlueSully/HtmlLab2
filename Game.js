@@ -6,7 +6,6 @@ function Game(){
 	player = new Player();
 	goal = new Square();
 }
-
 Game.prototype.test = function(){
 
 	console.log("Hello tester");
@@ -33,9 +32,7 @@ Game.prototype.gameLoop = function(){
 	else{
 		console.log("Not collided")
 		goal.draw();
-
 	}
-
 	player.draw();
 
 	window.requestAnimationFrame(game.gameLoop);
